@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bismillah.lenovow8.googlemapsproject.MapsActivity" >
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/uiTop"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/uiTop"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="center"
+        android:src="@drawable/ui5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ui6"
+        android:id="@+id/uiHP"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/uiSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ui6"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/saved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved : "
+        android:textSize="14sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/uiSign"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/map"
+        android:layout_below="@+id/uiHP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/ui7"
+        />
+
+    <TextView
+        android:id="@+id/textPopulation"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Population Density : "
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/uiSign"
+        />
+
+    <EditText
+        android:id="@+id/inputPopulation"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFont"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:textSize="14dip"
+        android:layout_below="@+id/textPopulation"
+        android:layout_marginTop="20dp"
+        android:layout_alignTop="@id/uiSign"
+        />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="Ok"
+        android:textSize="10dip"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/ui5"
+        android:layout_below="@+id/textPopulation"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/inputPopulation"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/uiBottom"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ui4" />
+
+    <ImageButton
+        android:id="@+id/uiP3k"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/ui3" />
+
+    <ImageButton
+        android:id="@+id/uiRadio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ui1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/uiBag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="130dp"
+        android:background="@drawable/ui2" />
+
+</RelativeLayout>

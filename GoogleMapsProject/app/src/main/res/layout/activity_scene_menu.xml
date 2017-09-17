@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="bismillah.lenovow8.googlemapsproject.SceneMenuActivity">
+
+  <ImageView
+      android:id="@+id/background"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/bg_menu"
+      />
+
+    <ImageView
+        android:layout_above="@+id/buttonss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title3"
+        android:id="@+id/title_menu"
+        android:layout_centerHorizontal="true"
+        />
+
+  <LinearLayout
+      android:id="@+id/buttonss"
+      android:layout_centerVertical="true"
+      android:layout_marginTop="1dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/ic_start"
+                />
+            <Button
+                android:id="@+id/buttonHelp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@mipmap/ic_help"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+      <Button
+          android:id="@+id/buttonCredit"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@mipmap/ic_credit"
+          />
+      <Button
+          android:id="@+id/buttonExit"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:background="@mipmap/ic_exit"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>
